@@ -1,20 +1,25 @@
 <!doctype html>
-<html class="no-js" lang="en" data-useragent="Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Trident/6.0)">
+<html class="no-js" lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>My Personal Profile Web Page</title>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Personal Profile Web Page</title>
 
-<!-- CSS3 Foundation -->
-<link rel="stylesheet" href="css/foundation/foundation.css"/>
-<link rel="stylesheet" href="css/foundation/normalize.css"/>
+  <!-- CSS3 Foundation -->
+  <link rel="stylesheet" href="css/foundation/foundation.css"/>
+  <link rel="stylesheet" href="css/foundation/normalize.css"/>
 
-<!-- CSS3 Foundation Icons-->
-<link rel="stylesheet" href="css/foundation/icons/foundation-icons.css" />
+  <!-- CSS3 Foundation Icons-->
+  <link rel="stylesheet" href="css/foundation/icons/foundation-icons.css" />
 
-<!-- Custom -->
-<link rel="stylesheet" href="css/style.css"/>
+  <!-- Custom -->
+  <link rel="stylesheet" href="css/style.css"/>
 
+  <style>
+    .hidden {
+      display: none;
+    }
+  </style>
 </head>
 
 <body>
@@ -26,100 +31,104 @@
 
 <section id="header" class="hero reset">
 
-<div id="top">
-  <div class="row">
-    <div class="large-12 columns">
+  <div id="top">
+    <div class="row">
+      <div class="large-12 columns">
 
-      <div class="row" id="navigation">
-        <div class="large-6 columns cl-effect-14 large-centered">
-          <ul class="button-group even-3">
-            <!-- Updated href for navigation buttons -->
-            <li><a href="#about-me" class="button">Home</a></li>
-            <li><a href="#portfolio" class="button">Portfolio</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="main-wrapper">
-        <h1>My Personal Profile Web Page</h1>
-        <hr>
-        <br>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div id="profile">
-  <div class="row">
-    <div class="large-12 columns">
-      <div class="profile-section">
-        <section id="about-me">
-          <h2>About Me</h2>
-          <p>Hello! My name is Charlemagne, but you can call me Cha! I am passionate about discovering new things and learning from it.</p>
-        </section>
-        
-        <section id="portfolio">
-          <h2>Portfolio</h2>
-        
-          <div class="profile-section">
-            <h3>Education / Achievements</h3>
-            <ul>
-              <li>Elementary - Pateros Catholic School</li>
-              <li>Senior High School - HUMSS Strand - Pateros Catholic School</li>
+        <div class="row" id="navigation">
+          <div class="large-6 columns cl-effect-14 large-centered">
+            <ul class="button-group even-3">
+              <li><button class="button" onclick="showSection('about-me')">Home</button></li>
+              <li><button class="button" onclick="showSection('portfolio')">Portfolio</button></li>
             </ul>
           </div>
-        
-          <div class="profile-section">
-            <h3>Course</h3>
-            <p>I am currently pursuing BSIT-MI, which focuses on optimizing technology.</p>
-          </div>
-        
-          <div class="profile-section">
-            <h3>IT Experience</h3>
-            <p>Learned programming languages like Python and Java in my past subjects.</p>
-          </div>
-        
-          <div class="profile-section">
-            <h3>Hobbies & Interests</h3>
-            <p>
-              In my free time, I like to meditate, explore makeup, and cook for the people I love. I enjoy taking time to relax and recharge.
-            </p>
-          </div>
-        
-          <div class="profile-section">
-            <h3>Goals in Life / Dream</h3>
-            <p>My ultimate goal is to provide for my family and repay them for all their hard work and sacrifices.</p>
-          </div>
-        
-          <div class="profile-section picture-gallery">
-            <h2>Picture Gallery</h2>
-            <img src="blob:https://www.messenger.com/566f86ec-8d6c-429e-9ae9-12752021bba7" width="500" height="600"> alt="Family Photo">
-          </div>          
-        </section>
-        
-         
+        </div>
+
+        <div class="main-wrapper">
+          <h1>My Personal Profile Web Page</h1>
+          <hr>
+          <br>
         </div>
       </div>
     </div>
   </div>
-</div>
 
-<footer>
-  <div class="row">
-    <div class="large-6 large-offset-6 columns">
-      <ul class="inline-list right">
-        <li><a href="#">About</a></li>
-        <li><a href="#">Terms of Use</a></li>
-        <li><a href="#">Privacy Policy</a></li>
-      </ul>
+  <div id="profile">
+    <div class="row">
+      <div class="large-12 columns">
+        <div class="profile-section">
+
+          <section id="about-me">
+            <h2>About Me</h2>
+            <p>Hello! My name is Charlemagne, but you can call me Cha! I am passionate about discovering new things and learning from it.</p>
+          </section>
+          
+          <section id="portfolio" class="hidden">
+            <h2>Portfolio</h2>
+            <div class="profile-section">
+              <h3>Education / Achievements</h3>
+              <ul>
+                <li>Elementary - Pateros Catholic School</li>
+                <li>Senior High School - HUMSS Strand - Pateros Catholic School</li>
+              </ul>
+            </div>
+            <div class="profile-section">
+              <h3>Course</h3>
+              <p>I am currently pursuing BSIT-MI, which focuses on optimizing technology.</p>
+            </div>
+            <div class="profile-section">
+              <h3>IT Experience</h3>
+              <p>Learned programming languages like Python and Java in my past subjects.</p>
+            </div>
+            <div class="profile-section">
+              <h3>Hobbies & Interests</h3>
+              <p>
+                In my free time, I like to meditate, explore makeup, and cook for the people I love. I enjoy taking time to relax and recharge.
+              </p>
+            </div>
+            <div class="profile-section">
+              <h3>Goals in Life / Dream</h3>
+              <p>My ultimate goal is to provide for my family and repay them for all their hard work and sacrifices.</p>
+            </div>
+            <div class="profile-section picture-gallery">
+              <h2>Picture Gallery</h2>
+              <img src="blob:https://www.messenger.com/566f86ec-8d6c-429e-9ae9-12752021bba7" width="500" height="600" alt="Family Photo">
+            </div>          
+          </section>
+
+        </div>
+      </div>
     </div>
   </div>
-  <div class="row credits">
-    <div class="large-6 columns">
-      <p>© Copyright - 2025</p>
+
+  <footer>
+    <div class="row">
+      <div class="large-6 large-offset-6 columns">
+        <ul class="inline-list right">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Terms of Use</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
     </div>
-  </div>
-</footer>
+    <div class="row credits">
+      <div class="large-6 columns">
+        <p>© Copyright - 2025</p>
+      </div>
+    </div>
+  </footer>
+
+<script>
+  function showSection(sectionId) {
+    // Hide all sections
+    document.querySelectorAll('#profile section').forEach(section => {
+      section.classList.add('hidden');
+    });
+
+    // Show the selected section
+    document.getElementById(sectionId).classList.remove('hidden');
+  }
+</script>
 
 </body>
 </html>

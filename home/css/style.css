@@ -1,5 +1,5 @@
 body {
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Raleway', American Typewriter;
 	font-size: 18px;
 	color: #333;;
 }
@@ -228,6 +228,14 @@ button, .button {
 	color: rgba(255,255,255,.8);
 }
 
+<div class="row" id="navigation">
+<div class="large-6 columns cl-effect-14 large-centered">
+  <ul class="button-group even-3">
+    <li><button class="button" onclick="showSection('about-me')">Home</button></li>
+    <li><button class="button" onclick="showSection('portfolio')">Portfolio</button></li>
+  </ul>
+</div>
+</div>
 
 
 /* === #gallery ===*/
