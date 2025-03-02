@@ -11651,6 +11651,35 @@ if (typeof getCookieItem === 'function' && (getCookieItem('__strk_cookie_eu_visi
   })
 </script>
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website</title>
+    <style>
+        /* Hide Strikingly branding using CSS */
+        .s-footer-logo-wrapper,
+        .s-footer-logo-tooltip,
+        .s-footer-logo-pbs {
+            display: none !important;
+            visibility: hidden !important;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to My Personal Website</h1>
+
+    <script>
+        // Remove Strikingly branding dynamically using JavaScript
+        document.addEventListener("DOMContentLoaded", function() {
+            let elements = document.querySelectorAll(".s-footer-logo-wrapper, .s-footer-logo-tooltip, .s-footer-logo-pbs");
+            elements.forEach(el => el.remove());
+        });
+    </script>
+</body>
+</html>
+
 
 
 </body></html>
